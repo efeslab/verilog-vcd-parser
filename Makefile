@@ -52,4 +52,5 @@ $(TEST_APP) : $(TEST_FILE) $(SRC_DIR)/VCDStandalone.cpp $(VCD_OBJ_FILES)
 clean:
 	rm -rf $(LEX_OUT) $(LEX_HEADER) $(LEX_OBJ) \
            $(YAC_OUT) $(YAC_HEADER) $(YAC_OBJ) \
+		   $(BUILD_DIR)/*.hpp \
            position.hh stack.hh location.hh VCDParser.output $(TEST_APP)
